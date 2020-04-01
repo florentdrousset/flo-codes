@@ -1,0 +1,12 @@
+.main-container {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: auto;
+    padding: 3em;
+    width: 70%;
+    border: 4px solid blue;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
