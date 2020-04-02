@@ -1,12 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <main class="main-container">
         <h1>Welcome</h1>
-        <p>My name is Florent and I like to code. I'm a junior web developper who likes to code in PHP and Ruby.
-        This website is developed with Symfony.</p>
+        <p>My name is Florent and I like programming. I'm a junior web developper who likes to code in PHP and Ruby.
+        This website is my blog and I post mostly about technical stuff. I think that explaining stuff to others is a very
+        good way to deeply understand stuff. I also like the idea of <a href="https://www.swyx.io/writing/learn-in-public/">learning in public</a>.
+        As mentioned previously, please bear in mind that I'm still a junior while reading my articles and have a good visit.</p>
+
+        <nav>
+                <a href="{{ path('article_index') }}">Articles</a>
+                <a href="#">Learning in public</a>
+                <a href="#">Contact</a>
+        </nav>
 {#        {{ postList }}#}
-    </main>
 
 
 
