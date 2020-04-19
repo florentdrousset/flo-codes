@@ -11,10 +11,21 @@
     </head>
     <body>
     <main class="main-container">
+        <nav>
+            <a href="{{ path('home') }}">Home</a>
+            <a href="{{ path('article_index') }}">Articles</a>
+            <a href="#">Learning in public</a>
+            <a href="#">Contact</a>
+        </nav>
     {% block body %}{% endblock %}
     </main>
         {% block javascripts %}
+            <script
+                    src="https://code.jquery.com/jquery-3.5.0.min.js"
+                    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+                    crossorigin="anonymous"></script>
             <script src="{{ asset('assets/js/highlight.pack.js') }}"></script>
+            <script src="{{ asset('assets/js/articles_list.js') }}"></script>
             <script>hljs.initHighlightingOnLoad();</script>
         {% endblock %}
     </body>

@@ -3,15 +3,14 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <h1>Articles</h1>
+{#    <h1>Articles</h1>#}
 
     <table class="table" id="articles-table">
         <tbody>
         {% for article in articles %}
             <tr>
-                <td><a href="{{ path('article_show', {'id': article.id}) }}">{{ article.title }}</a></td>
-                <td>{{ article.text }}</td>
-{#                <td>{{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}</td>#}
+                <td><a class="black" href="{{ path('article_show', {'id': article.id}) }}">"{{ article.title }}"<span class="date">, written on {{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}</span></a></td>
+                <td><img src="{{ asset('assets/img/computer-4.png') }}"></td>
             </tr>
         {% else %}
             <tr>
